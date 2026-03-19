@@ -18,7 +18,7 @@ i.e If I want `file.json` to be located in `projectFolder/json/file.json`, I wou
 
 For example:
 
-```json
+```js
 {
   "content": {
     "a": "foo",
@@ -27,10 +27,11 @@ For example:
 }
 ```
 
-Variables can be inserted by wrapping them with quotes.  
+Variables can be inserted by wrapping them with quotes.
+
 For example:
 
-```json
+```js
 {
   "content": {
     "a": "${tempVars('foo')}",
@@ -44,18 +45,19 @@ For example:
 Lists should be wrapped in square brackets `[]`.  
 For example:
 
-```json
+```js
 {
   "list": ["this", "is", "a", "list"]
 }
 ```
 
-For lists that are stored as a variable, just create the list and wrap the variable with quotes.  
+For lists that are stored as a variable, just create the list and wrap the variable with quotes, then map it so that each element is wrapped with quotes to prevent parsing errors.
+
 For example:
 
-```json
+```js
 {
-  "list": ["${tempVars('list')}"]
+  "list": [${tempVars('list').map(el=>'"'+el+'"')}]
 }
 ```
 
@@ -66,7 +68,7 @@ Similar to creating JSON files, type in the path of your JSON file in relation t
 
 ### Example of JSON file
 
-```json
+```js
 {
   "content": {
     "a": "foo",
@@ -75,12 +77,14 @@ Similar to creating JSON files, type in the path of your JSON file in relation t
 }
 ```
 
-I would be storing this JSON as a variable `${tempVars('json')}`.  
+I would be storing this JSON as a variable `${tempVars('json')}`.
+
 To access the word `foo`, I can use `${tempVars('json').content.a}` and it will return `foo`.
 
 ### What if I already know which element I want from the JSON file?
 
-Lets say you already know what you want to access from the JSON file, you can just type in the element path.  
+Lets say you already know what you want to access from the JSON file, you can just type in the element path.
+
 For example, I want to access the word `bar` from my JSON file, located in `content.b`, I would type `content.b` as the element path.
 
 ## Modifying JSON Files
@@ -96,16 +100,17 @@ If you're creating/replacing an element, you would have to type in the content o
 
 ## Pretty Print
 
-The `Create JSON File` and `Modify JSON File` mods have the option to `pretty print`, meaning that the JSON would be stringified to a more readable version.  
+The `Create JSON File` and `Modify JSON File` mods have the option to `pretty print`, meaning that the JSON would be stringified to a more readable version.
+
 For example, instead of being stored as:
 
-```json
+```js
 { "content": { "a": "foo", "b": "bar" } }
 ```
 
 Enabling pretty print would instead save it as:
 
-```json
+```js
 {
   "content": {
     "a": "foo",
@@ -116,8 +121,10 @@ Enabling pretty print would instead save it as:
 
 ## Validating JSON
 
-The `Create JSON File` and `Modify JSON File` mods have a button to `Validate JSON`.  
+The `Create JSON File` and `Modify JSON File` mods have a button to `Validate JSON`.
+
 Clicking the button would do a basic validation of your JSON, letting you know if the content you've typed in is valid or not.
 
-Green - Valid  
+Green - Valid
+
 Red - Invalid
