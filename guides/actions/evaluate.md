@@ -73,5 +73,6 @@ ${tempVars('foo')} // "bar"
 
 ## Whats the difference between `Execute` and `Evaluate`?
 
-`Execute ` - Runs **operating system** commands.<br>
+`Execute ` - Runs **operating system** commands.
+
 `Evaluate` - Run **Javascript** code.
