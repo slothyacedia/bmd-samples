@@ -1,4 +1,4 @@
-# bmd-samples
+# Samples
 
 ## Info
 
