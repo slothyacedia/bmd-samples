@@ -20,12 +20,14 @@ Now, lets search for items that contain the word "wood" in them.
 
 1. Store the user input
 
-   > Open the autocomplete menu and give the user input a variable [userInput]
+   -> Open the autocomplete menu and give the user input a variable [userInput]
 
 2. Match
 
-   > Use the `filter list` modded action and set it up to filter for elements that contain the word "wood" (case insensitive)
-   > Store the filtered list as a variable [filteredList]
+   -> Use the `filter list` modded action and set it up to filter for elements that contain the word "wood" (case insensitive)
+
+   -> Store the filtered list as a variable [filteredList]
 
 3. Return result [filteredList]
-   > On the client side, it should show options like "Wooden Table", "Wooden Chair", "Wood Plate"
+
+   -> On the client side, it should show options like "Wooden Table", "Wooden Chair", "Wood Plate"
