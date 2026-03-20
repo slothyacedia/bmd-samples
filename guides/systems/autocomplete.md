@@ -6,7 +6,7 @@ To use autocomplete, you need to return a list.
 
 Lets do something simple, like basic searching within a list of items.
 
-## Guide
+## The Data
 
 Lets create a list of items, lets say
 
@@ -15,6 +15,8 @@ Lets create a list of items, lets say
 ```
 
 This will be our list of items that we can search through [itemList]
+
+## The System
 
 Now, lets search for items that contain the word "wood" in them.
 
