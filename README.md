@@ -1,8 +1,8 @@
 # BMD Knowledge Base
 
-This repo contains samples and guides on some actions and systems.
+This repo contains samples and guides on some actions and systems
 
-Maintained by Acedia.
+Maintained by Acedia
 
 | Category        | Link                                                                         |
 | --------------- | ---------------------------------------------------------------------------- |
@@ -10,3 +10,6 @@ Maintained by Acedia.
 | Action Guides   | [Jump](https://github.com/slothyacedia/bmd-samples/tree/main/guides/actions) |
 | System Guides   | [Jump](https://github.com/slothyacedia/bmd-samples/tree/main/guides/systems) |
 | Other Guides    | [Jump](https://github.com/slothyacedia/bmd-samples/tree/main/guides/others)  |
+
+> [!NOTE]
+> This repo is a unofficial collection of samples and guides maintained by an individual
