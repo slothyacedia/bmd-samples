@@ -8,7 +8,6 @@ Maintained by Acedia
 | --------------- | ---------------------------------------------------------------------------- |
 | Command Samples | [Jump](https://github.com/slothyacedia/bmd-samples/tree/main/samples)        |
 | Action Guides   | [Jump](https://github.com/slothyacedia/bmd-samples/tree/main/guides/actions) |
-| System Guides   | [Jump](https://github.com/slothyacedia/bmd-samples/tree/main/guides/systems) |
 | Other Guides    | [Jump](https://github.com/slothyacedia/bmd-samples/tree/main/guides/others)  |
 
 > [!NOTE]
